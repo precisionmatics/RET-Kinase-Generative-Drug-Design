@@ -28,17 +28,6 @@
 | 10a | `10a_pymol_styles_preview.py` | PyMOL 3D pose visualization |
 | 10b | `10b_2d_interaction_diagrams.py` | 2D protein-ligand interaction diagrams (RDKit + matplotlib) |
 
-### Revision Analysis Scripts (`revisions/`)
-
-| Script | Purpose |
-|--------|---------|
-| `R1_novelty_check.py` | Exact SMILES + Tanimoto novelty verification of all 100 candidates vs training set |
-| `R2_sa_scores.py` | Synthetic accessibility (SA) scores for all candidates and top 5 leads |
-| `R3_reference_docking.py` | AutoDock-GPU docking of selpercatinib, pralsetinib, nintedanib as benchmarks |
-| `R3b_reference_docking_fixed.py` | Fixed version with correct SMILES from PubChem CID lookup |
-| `R4_correlation_matrix.py` | Spearman rank correlation between 6 scoring methods |
-| `R5_multi_ic50_analysis.py` | Analysis of multiple IC50 measurements per compound in BindingDB |
-
 ---
 
 ## Key Results
@@ -78,6 +67,3 @@ Boltz-2 v2.2.1
 - **Docking box:** 22.5 × 22.5 × 22.5 Å³ centered at (5.72, 4.62, −3.27 Å)
 - **Binding site residues (key):** GLU805, ALA807, LYS758, VAL804 (gatekeeper), ASP892
 
-## Citation
-
-If you use this pipeline, please cite the associated *Scientific Reports* manuscript (DOI to be added upon acceptance).
